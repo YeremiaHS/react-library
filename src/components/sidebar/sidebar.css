@@ -1,0 +1,132 @@
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 10px 0px #d3d3d3d4;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar .profile-picture {
+    margin-top: 7px;
+    display: block;
+    font-family: Poppins;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .sidebar .closebtn {
+    color: black;
+    text-decoration: none;
+  }
+
+  .sidebar .closebtn:hover {
+    color: #818181;
+    text-decoration: none;
+  }
+
+  .sidebar .sidebar-username {
+    padding: 10px 8px 4px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  .sidebar .sidebar-username:hover {
+    color: #818181;
+    text-decoration: none;
+  }
+
+  /* sidebar button */
+  .sidebar .logoutBtn {
+    /* margin: 0px 8px 8px 114px; */
+    border: 1px sold #818181;
+    border-radius: 6px;
+    box-shadow: none;
+    background-color: white;
+    font-size: 12px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* sidebar submenu */
+  .sidebar-menu {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  /* sidebar submenu item */
+  .sidebar-menu .sidebar-item {
+    padding: 10px 8px 4px 32px;
+    text-decoration: none;
+    color: black;
+    float: left;
+    font: Poppins;
+    font-size: 20px;
+  }
+
+  /* sidebar submenu item */
+  .sidebar .sidebar-item:hover {
+    color: #818181;
+    text-decoration: none;
+  }
+
+  .sidebar-menu .addBtn {
+    margin-top: 7px;
+    padding-top: 10px;
+    padding-left: 32px;
+
+    float: left;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    font-family: Poppins;
+  }
+  
+  .sidebar-menu .addBtn:hover {
+    color: #818181;
+    text-decoration: none;
+  }
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    cursor: pointer;
+    color: black;
+  }
+  
+  .openbtn:hover {
+    color: #818181;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }

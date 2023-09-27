@@ -1,0 +1,8 @@
+.book-cover {
+    height: 288px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 104px;
+    left: 82%;
+}

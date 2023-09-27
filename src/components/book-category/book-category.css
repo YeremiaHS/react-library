@@ -1,0 +1,21 @@
+.category-container {
+    position: static;
+    margin-top: 24px;
+    margin-left: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-container .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBCC38;
+    width: 90px;
+    color: white;
+    border-radius: 16px;
+    font-family: Poppins;
+    font-size: 16px;
+    padding: 4px;
+}

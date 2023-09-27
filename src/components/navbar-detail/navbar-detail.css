@@ -1,0 +1,43 @@
+.back-arrow {
+    margin-top: 26px;
+    margin-left: 24px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    position: fixed;
+    cursor: pointer;
+}
+
+.edit-delete-container {
+    display: flex;
+    left: 86.5%;
+    position: fixed;
+    top: 24px;
+}
+
+.edit-delete-container .separator {
+    color: white;
+    font-size: 20px;
+}
+
+.edit-delete-container .edit-button {
+    margin-right: 4px;
+    margin-top: 2px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: Poppins;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.edit-delete-container .delete-button {
+    margin-left: 4px;
+    margin-top: 2px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: Poppins;
+    font-size: 14px;
+    cursor: pointer;
+}

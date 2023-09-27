@@ -1,0 +1,126 @@
+.modal-edit {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-edit .modal-content {
+    color: black;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 40%;
+}
+
+.modal-edit .form-modal {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.modal-edit .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-edit .text-modal-1 {
+    margin-top: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.modal-edit .container-url {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.container-url .input-url {
+    width: 384px;
+    border-radius: 6px;
+    border: 1px solid #00000080;
+    width: 28vw;
+}
+  
+.container-url .label-modal-url {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+}
+  
+.modal-content .container-title {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.container-title .input-title {
+    width: 384px;
+    border-radius: 6px;
+    width: 28vw;
+    border: 1px solid #00000080;
+}
+  
+.container-title .label-modal-title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+}
+  
+.modal-content .container-description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+  
+.container-description .input-description {
+    border-radius: 6px;
+    width: 28vw;
+    border: 1px solid #00000080;
+}
+  
+.container-description .label-modal-description {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+}
+  
+.container-button {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 385px;
+    width: 18%;
+}
+  
+.container-button .button-submit {
+    background-color: #FBCC38;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.container-button .button-submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

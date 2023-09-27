@@ -1,0 +1,13 @@
+
+.text1 {
+  margin-top: 45px;
+  margin-left: 35px;
+}
+
+.text1 .text-list {
+  color: black;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 600;
+}
+

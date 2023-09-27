@@ -1,0 +1,14 @@
+.content-container {
+    /* position: static; */
+    margin-top: 48px;
+    margin-left: 45px;
+    margin-right: 440px;
+}
+
+.content-container .content {
+    color: black;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 48px;
+}

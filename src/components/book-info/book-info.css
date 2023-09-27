@@ -1,0 +1,69 @@
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    margin-top: 8px;
+    margin-left: 45px;
+    margin-right: 440px;
+}
+
+.title-container .title {
+    color: black;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.title-container .status {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #99D815;
+}
+
+.publisher-author-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 45px;
+    width: 14vw;
+}
+
+.publisher-author-container .publisher {
+    color: black;
+    font-size: 14px;
+}
+
+.publisher:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.publisher-author-container .separator {
+    color: black;
+    font-size: 14px;
+}
+
+.publisher-author-container .author {
+    color: black;
+    font-size: 14px;
+}
+
+.author:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.date-container {
+    position: static;
+    margin-top: 8px;
+    margin-left: 45px;
+    margin-right: 440px;
+}
+
+.date-container .date {
+    color: black;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+}
