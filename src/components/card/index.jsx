@@ -13,7 +13,7 @@ function Card() {
                             style ={{width:'50%'}}
                         />
                     </div>
-                    <div class="container">
+                    <div class="book-container">
                         <p class="book-title">The Ballad of Songbirds and Snake</p>
                         <div class="book-desc-container">
                             <p class="book-desc">
@@ -31,7 +31,7 @@ function Card() {
                             style ={{width:'50%'}}
                         />
                     </div>
-                    <div class="container">
+                    <div class="book-container">
                         <p class="book-title">The Ballad of Songbirds and Snake</p>
                         <div class="book-desc-container">
                         <p class="book-desc">
@@ -50,7 +50,7 @@ function Card() {
 
                         />
                     </div>
-                    <div class="container">
+                    <div class="book-container">
                         <p class="book-title">The Ballad of Songbirds and Snake</p>
                         <div class="book-desc-container">
                         <p class="book-desc">
@@ -69,7 +69,7 @@ function Card() {
 
                         />
                     </div>
-                    <div class="container">
+                    <div class="book-container">
                         <p class="book-title">The Ballad of Songbirds and Snake</p>
                         <div class="book-desc-container">
                         <p class="book-desc">

@@ -27,7 +27,7 @@
   }
   
   /* Add some padding inside the card container */
-  .container {
+  .book-container {
     padding: 2px 16px;
     color: black;
   }
@@ -54,4 +54,6 @@
   .book-desc-container .book-desc {
     font-family: Poppins;
     font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
