@@ -5,6 +5,7 @@ export const fetchApi = async ({ url, method, data}) => {
         const responseAxios = await axios({
             url, method, data
         })
+        return responseAxios;
     } catch (error) {
         return error.response;
     }

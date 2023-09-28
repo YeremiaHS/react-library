@@ -3,25 +3,29 @@ import Navbar from "../../components/navbar-home";
 import Carousel from "../../components/slider";
 import Card from "../../components/card";
 import { useEffect, useState } from "react";
-import { getBooks } from "../../services/books";
+import { getBookService } from "../../services/books";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
+  const [searchBooks, setSearchBooks] = useState("");
 
-  const getData = async () =>{
+  const getBook = async () =>{
     try {
-      const data = await getBooks();
-      console.log(data, "from axios");
+      const data = await getBookService();
+
       setBooks(data.data);
+
+      console.log(data.data);
+
       return data.data;
     } catch (error) {
       console.log(error.message);
     }
   }
 
-  useEffect(() => {
-    getData();
-  }, []);
+  const result = books.filter((books) => 
+    books.name.toLowerCase().includes(searchBooks.toLowerCase())
+  );
   
   return (
     <>
@@ -42,8 +46,9 @@ const Home = () => {
                 imgUrl = {p.imgUrl}
                 title = {p.title}
                 content = {p.content}
+                id = {p.id}
               />
-            )
+            );
           })
         ) : (
             <p>No Data!</p>

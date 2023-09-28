@@ -41,6 +41,26 @@ function ModalAdd(props) {
               <input type="text" className="input-title" id="input-title" />
             </div>
             <br />
+            <div className="container-date">
+              <label className='label-modal-date'>
+                Date{" "}
+              </label>
+              <input type="date" className='input-date' id='input-date' />
+            </div>
+            <br />
+            <div className="container-author">
+              <label className='label-modal-author'>
+                Author{" "}
+              </label>
+              <input type="text" className='input-author' id='input-author' />
+            </div>
+            <div className="container-publisher">
+              <label className='label-modal-publisher'>
+                Publisher{""}
+              </label>
+              <input type="text" className='input-publisher' id='input-publisher' />
+            </div>
+            <br />
             <div className="container-description">
               <label className="label-modal-description">
                 Description{" "}
