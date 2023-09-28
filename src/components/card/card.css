@@ -47,6 +47,7 @@
   }
   
   .card .book-title {
+    color: black;
     font-family: Poppins;
     font-weight: 700;
     font-size: 20px;

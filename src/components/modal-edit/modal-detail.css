@@ -83,6 +83,60 @@
     font-weight: 500;
     font-size: 16px;
 }
+
+.modal-content .container-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-date .label-modal-date {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container-date .input-date {
+    width: 384px;
+    border-radius: 6px;
+    width: 28vw;
+    border: 1px solid #00000080;
+}
+
+.modal-content .container-author {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-author .label-modal-author {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container-author .input-author {
+    width: 384px;
+    border-radius: 6px;
+    width: 28vw;
+    border: 1px solid #00000080;
+}
+
+.modal-content .container-publisher {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-publisher .label-modal-publisher {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container-publisher .input-publisher {
+    width: 384px;
+    border-radius: 6px;
+    width: 28vw;
+    border: 1px solid #00000080;
+}
   
 .modal-content .container-description {
     display: flex;

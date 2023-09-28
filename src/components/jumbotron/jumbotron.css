@@ -1,5 +1,13 @@
-.jumbo-cover {
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.jumbotron .jumbo-cover {
+    
+    display: flex;
     height: 454px;
-    background-image: url('https://cdn.gramedia.com/uploads/picture_meta/2023/7/18/8j2t6feaxsffdnad5mweyj.jpg');
+    /* background-image: url('https://cdn.gramedia.com/uploads/picture_meta/2023/7/18/8j2t6feaxsffdnad5mweyj.jpg'); */
     /* width: 100vw; */
 }

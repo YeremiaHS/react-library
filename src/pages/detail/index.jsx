@@ -4,7 +4,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import Jumbotron from '../../components/jumbotron';
 import BookCover from '../../components/book-cover';
 import BookInfo from '../../components/book-info';
-import BookCategory from '../../components/book-category';
+// import BookCategory from '../../components/book-category';
 import BookContent from '../../components/book-content';
 import Footer from '../../components/footer';
 import NavbarDetail from '../../components/navbar-detail';
@@ -35,7 +35,7 @@ const Detail = () => {
             </div>
 
             {/* book category */}
-            <BookCategory />
+            {/* <BookCategory /> */}
 
             {/* book information */}
             <BookInfo />
