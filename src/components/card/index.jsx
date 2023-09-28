@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function Card(props) {
     const {id, imgUrl, title, content} = props;
-    
+
     return (
         <>
             <div class="cards">

@@ -7,25 +7,23 @@ import { getBookService } from "../../services/books";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
-  const [searchBooks, setSearchBooks] = useState("");
+  // const [searchBooks, setSearchBooks] = useState("");
 
   const getBook = async () =>{
     try {
       const data = await getBookService();
 
-      setBooks(data.data);
+      setBooks(data.data.data);
 
-      console.log(data.data);
-
-      return data.data;
+      return data.data.data;
     } catch (error) {
       console.log(error.message);
     }
   }
 
-  const result = books.filter((books) => 
-    books.name.toLowerCase().includes(searchBooks.toLowerCase())
-  );
+  useEffect(() => {
+    getBook();
+}, []);
   
   return (
     <>
@@ -39,7 +37,7 @@ const Home = () => {
 
       <section className="books">
         {books ? (
-          result.map((p) => {
+          books.map((p) => {
             return (
               <Card 
                 key = {p.id}

@@ -110,7 +110,7 @@ function ModalAdd(props) {
               ></textarea>
             </div>
             <div className="container-button">
-              <button className="button-submit" id="button-submit">
+              <button className="button-submit" id="button-submit" onClick={(e) => saveBook(e)}>
                 Submit
               </button>
             </div>
