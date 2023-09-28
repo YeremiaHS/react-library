@@ -1,8 +1,44 @@
 import './modal-home.css'
 import { useEffect, useState } from 'react';
+import { addBookService } from '../../services/books';
+import { useNavigate } from 'react-router-dom';
 
 function ModalAdd(props) {
-  
+
+  const [imgUrl, setImgUrl] = useState("");
+  const [title, setTitle] = useState("");
+  const [date, setDate] = useState("");
+  const [author, setAuthor] = useState("");
+  const [publisher, setPublisher] = useState("");
+  const [content, setContent] = useState("")
+
+  const navigate = useNavigate();
+
+  const saveBook = async (e) => {
+    try {
+      e.preventDefault();
+
+      const book = {
+        imgUrl, judul: title, tanggalTerbit: date, namaPengarang: author, namaPenerbit: publisher, konten: content,
+      };
+
+      const resp = await addBookService(book);
+
+      alert(resp.data)
+      setImgUrl("")
+      setTitle("")
+      setDate("")
+      setAuthor("")
+      setPublisher("")
+      setContent("");
+
+      navigate("/")
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   const {
     isOpen
   } = props
@@ -29,28 +65,28 @@ function ModalAdd(props) {
           <form action="" className="form-modal">
             <div className="container-url">
               <label className="label-modal-url">
-                Url Image{" "}
+                Url Image
               </label>
               <input type="url" className="input-url" id="input-image" />
             </div>
             <br />
             <div className="container-title">
               <label className="label-modal-title">
-                Title{" "}
+                Title
               </label>
               <input type="text" className="input-title" id="input-title" />
             </div>
             <br />
             <div className="container-date">
               <label className='label-modal-date'>
-                Date{" "}
+                Date
               </label>
               <input type="date" className='input-date' id='input-date' />
             </div>
             <br />
             <div className="container-author">
               <label className='label-modal-author'>
-                Author{" "}
+                Author
               </label>
               <input type="text" className='input-author' id='input-author' />
             </div>
@@ -63,7 +99,7 @@ function ModalAdd(props) {
             <br />
             <div className="container-description">
               <label className="label-modal-description">
-                Description{" "}
+                Description
               </label>
               <textarea
                 name="book-description-area"
