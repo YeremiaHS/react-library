@@ -97,7 +97,6 @@
 }
 
 .container-date .input-date {
-  height: 28px;
   width: 360px;
   border-radius: 6px;
   border: 1px solid #00000080;
@@ -106,7 +105,7 @@
 .modal-content .container-author {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .container-author .label-modal-author {
@@ -134,6 +133,7 @@
 }
 
 .container-publisher .input-publisher {
+  z-index:1000;
   width: 360px;
   border-radius: 6px;
   border: 1px solid #00000080;

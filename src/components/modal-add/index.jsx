@@ -32,7 +32,7 @@ function ModalAdd(props) {
       setPublisher("")
       setContent("");
 
-      navigate("/")
+      navigate("/home")
 
     } catch (error) {
       console.log(error);
@@ -67,34 +67,35 @@ function ModalAdd(props) {
               <label className="label-modal-url">
                 Url Image
               </label>
-              <input type="url" className="input-url" id="input-image" />
+              <input type="url" className="input-url" id="input-image" onChange={(e) => setImgUrl(e.target.value)} value={imgUrl} />
             </div>
             <br />
             <div className="container-title">
               <label className="label-modal-title">
                 Title
               </label>
-              <input type="text" className="input-title" id="input-title" />
+              <input type="text" className="input-title" id="input-title" onChange={(e) => setTitle(e.target.value)} value={title} />
             </div>
             <br />
             <div className="container-date">
               <label className='label-modal-date'>
                 Date
               </label>
-              <input type="date" className='input-date' id='input-date' />
+              <input type="text" className='input-date' id='input-date' onChange={(e) => setDate(e.target.value)} value={date} />
             </div>
             <br />
             <div className="container-author">
               <label className='label-modal-author'>
                 Author
               </label>
-              <input type="text" className='input-author' id='input-author' />
+              <input type="text" className='input-author' id='input-author' onChange={(e) => setAuthor(e.target.value)} value={author} />
             </div>
+            <br />
             <div className="container-publisher">
               <label className='label-modal-publisher'>
                 Publisher{""}
               </label>
-              <input type="text" className='input-publisher' id='input-publisher' />
+              <input type="text" className='input-publisher' id='input-publisher' onChange={(e) => setPublisher(e.target.value)} value={publisher} />
             </div>
             <br />
             <div className="container-description">
@@ -107,6 +108,7 @@ function ModalAdd(props) {
                 cols="40"
                 rows="4"
                 className="input-description"
+                onChange={(e) => setContent(e.target.value)} value={content}
               ></textarea>
             </div>
             <div className="container-button">
