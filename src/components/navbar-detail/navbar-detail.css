@@ -1,7 +1,7 @@
 .back-arrow {
     margin-top: 26px;
     margin-left: 24px;
-    color: white;
+    color: black;
     border-radius: 10px;
     display: flex;
     position: fixed;
@@ -16,15 +16,16 @@
 }
 
 .edit-delete-container .separator {
-    color: white;
+    color: black;
     font-size: 20px;
+    padding: 2px;
 }
 
 .edit-delete-container .edit-button {
     margin-right: 4px;
-    margin-top: 2px;
+    /* margin-top: 2px; */
     background-color: transparent;
-    color: white;
+    color: black;
     border: none;
     font-family: Poppins;
     font-size: 14px;
@@ -33,9 +34,9 @@
 
 .edit-delete-container .delete-button {
     margin-left: 4px;
-    margin-top: 2px;
+    /* margin-top: 2px; */
     background-color: transparent;
-    color: white;
+    color: black;
     border: none;
     font-family: Poppins;
     font-size: 14px;

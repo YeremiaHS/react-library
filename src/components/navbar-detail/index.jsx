@@ -26,7 +26,7 @@ function NavbarDetail() {
                     {/* separator */}
                     {/* delete button */}
                     <div>
-                        <button class="delete-button">Delete</button>
+                        <button class="delete-button" >Delete</button>
                     </div>
                     {/* delete button */}
             </div>

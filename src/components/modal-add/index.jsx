@@ -24,7 +24,8 @@ function ModalAdd(props) {
 
       const resp = await addBookService(book);
 
-      alert(resp.data)
+      console.log(resp.data.message);
+      alert(resp.data.message)
       setImgUrl("")
       setTitle("")
       setDate("")

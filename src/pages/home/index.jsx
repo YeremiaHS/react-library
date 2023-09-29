@@ -39,13 +39,15 @@ const Home = () => {
         {books ? (
           books.map((p) => {
             return (
-              <Card 
-                key = {p.id}
-                imgUrl = {p.imgUrl}
-                title = {p.title}
-                content = {p.content}
-                id = {p.id}
-              />
+              // <div className="cards">
+                <Card 
+                  key = {p.id}
+                  imgUrl = {p.imgUrl}
+                  title = {p.title}
+                  content = {p.content}
+                  id = {p.id}
+                />
+              // </div>
             );
           })
         ) : (

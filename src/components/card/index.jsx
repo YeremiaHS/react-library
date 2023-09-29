@@ -7,28 +7,27 @@ function Card(props) {
 
     return (
         <>
-            <div class="cards">
-                <div class="card">
-                    <div className="card-image-container">
-                        <img
-                            src={imgUrl}
-                            alt="book"
-                            
-                            style ={{width:'50%'}}
-                        />
-                    </div>
-                    <div class="book-container">
-                        <Link to={`detail/${id}`}>
-                            <p class="book-title">{title}</p>
-                        </Link>
-                        <div class="book-desc-container">
-                            <p class="book-desc">
+        {/* <div className="cards"> */}
+            <div class="card">
+                <div className="card-image-container">
+                    <img
+                        src={imgUrl}
+                        alt="book"
+                        style ={{width:'50%'}}
+                    />
+                </div>
+                <div class="book-container">
+                    <Link to={`detail/${id}`}>
+                        <p class="book-title">{title}</p>
+                    </Link>
+                    <div class="book-desc-container">
+                        <p class="book-desc">
                                 {content}
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
+        {/* </div> */}
         </>
     )
 }

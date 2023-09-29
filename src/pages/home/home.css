@@ -1,3 +1,9 @@
+.books {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35px;
+}
 
 .text1 {
   margin-top: 45px;

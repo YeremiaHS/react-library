@@ -24,7 +24,7 @@ export const getBookService = async() => {
 // get book by id
 export const getBookByIdService = async(id) => {
     try {
-        const Url = `${BASE_API_URL_DEV}/books/${id}`;
+        const url = `${BASE_API_URL_DEV}/books/${id}`;
         const response = await fetchApi({url, method:"GET"});
 
         return response;
@@ -60,7 +60,7 @@ export const updateBookService = async (id, data) => {
 // delete book
 export const deleteBookService = async(id) => {
     try {
-        const url = `${BASE_API_URL_DEV}/${id}`
+        const url = `${BASE_API_URL_DEV}/books/${id}`
         const response = await fetchApi({url, method:"DELETE"});
 
         return response;

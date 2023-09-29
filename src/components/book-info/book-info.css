@@ -1,3 +1,7 @@
+.info-container {
+    margin-top: 24px;
+}
+
 .title-container {
     display: flex;
     justify-content: space-between;
@@ -26,7 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-left: 45px;
-    width: 14vw;
+    width: 26vw;
 }
 
 .publisher-author-container .publisher {
