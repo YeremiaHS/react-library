@@ -48,7 +48,7 @@ export const addBookService = async(data) => {
 // update book
 export const updateBookService = async (id, data) => {
     try {
-        const url = `${BASE_API_URL_DEV}/update/${id}`
+        const url = `${BASE_API_URL_DEV}/books/update/${id}`
         const response = await fetchApi({url, method:"PUT", data})
 
         return response;

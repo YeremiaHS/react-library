@@ -25,9 +25,9 @@ function ModalEdit(props) {
                 imgUrl, judul: title, tanggalTerbit: date, namaPengarang: author, namaPenerbit: publisher, konten: content,
             };
 
-            const resp = await updateBookService(book);
+            const resp = await updateBookService(id, book);
 
-            alert(resp.data)
+            alert(resp.data.message)
             setImgUrl("")
             setTitle("")
             setDate("")
@@ -42,23 +42,24 @@ function ModalEdit(props) {
         }
     }
 
-    const getBook = async (idBook) => {
+    const getBook = async (id) => {
         try {
-            const response = await getBook(idBook)
-            const book = response.data.data[0];
-            setImgUrl(book.imgUrl);
-            setTitle(book.title);
-            setDate(book.date);
-            setAuthor(book.author);
-            setPublisher(book.publisher);
-            setContent(book.content);
+            const response = await getBookByIdService(id)
+            const book = response.data.data;
+            console.log(book)
+            setImgUrl(book?.imgUrl);
+            setTitle(book?.title);
+            setDate(book?.date);
+            setAuthor(book?.author?.name);
+            setPublisher(book?.publisher?.name);
+            setContent(book?.content);
         } catch (error) {
             console.log(error);
         }
     }
 
     useEffect(() => {
-        getBookByIdService(id);
+        getBook(id);
     }, [id]);
 
     const {
