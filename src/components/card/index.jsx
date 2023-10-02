@@ -13,7 +13,7 @@ function Card(props) {
                     <img
                         src={imgUrl}
                         alt="book"
-                        style ={{width:'50%'}}
+                        style ={{width:'35%'}}
                     />
                 </div>
                 <div class="book-container">

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './modal-detail.css'
 import { useNavigate, useParams } from 'react-router-dom';
-import { updateBookService, getBookByIdService } from '../../services/books';
+import { updateBookService, getBookByIdService, deleteBookService } from '../../services/books';
 // import { data } from 'flickity';
 
 function ModalEdit(props) {

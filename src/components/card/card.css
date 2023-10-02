@@ -1,11 +1,12 @@
   
-  .cards .card {
+.card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 20%;
-    height: 10%;
+    width: 320px;
+    height: 360px;
     border-radius: 8px;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   .card .card-image-container {
@@ -43,12 +44,13 @@
     color: black;
     font-family: Poppins;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .book-desc-container .book-desc {
     font-family: Poppins;
     font-weight: 400;
+    font-size: 12px;
     margin-top: 12px;
     margin-bottom: 12px;
   }

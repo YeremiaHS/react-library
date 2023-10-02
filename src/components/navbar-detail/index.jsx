@@ -1,9 +1,26 @@
 import './navbar-detail.css'
 import ModalEdit from '../modal-edit';
 import { useState } from 'react';
+import { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { deleteBookService } from '../../services/books';
 
 function NavbarDetail() {
-    const [openModalDet, setOpenModalDet] = useState (false)
+    const [openModalDet, setOpenModalDet] = useState (false);
+
+    const { id } = useParams();
+    const navigate = useNavigate();
+
+    const deleteBook = async(id) =>{
+        try {
+            const response = await deleteBookService(id);
+            alert(response.data.message)
+            console.log(response)
+            navigate("/home")
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     function toggleModalDet(e) {
         e.preventDefault();
@@ -26,7 +43,7 @@ function NavbarDetail() {
                     {/* separator */}
                     {/* delete button */}
                     <div>
-                        <button class="delete-button" >Delete</button>
+                        <button class="delete-button" onClick={(e) => deleteBook(id)}>Delete</button>
                     </div>
                     {/* delete button */}
             </div>
